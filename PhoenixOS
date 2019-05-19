@@ -1,0 +1,6 @@
+insmod gzio
+insmod part_gpt
+insmod ext2
+set root='(hd0,gpt6)'
+linux /PhoenixOS/kernel quiet root=/dev/ram0 androidboot.hardware=remix_x86_64 androidboot.selinux=permissive SRC=/PhoenixOS
+initrd /PhoenixOS/initrd.img
